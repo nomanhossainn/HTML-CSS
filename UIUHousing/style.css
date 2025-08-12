@@ -1,0 +1,163 @@
+/* Global Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Navbar Styles */
+.navbar {
+  position: absolute;
+  top: 6%; /*Gap navbar from top*/
+  width: 100%; 
+  height: 80px; /*Height of navbar*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px; /*Padding for responsive design height width*/
+  background: white;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo and Title Section */
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px; /*Height of logo*/
+  margin-right: 10px; /*Gap between logo and title*/
+}
+
+.site-title {
+  font-size: 22px;
+  color: #00b894;
+  font-weight: bold;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px; /*Gap between links*/
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px; /*Font size of links*/
+}
+
+/* Visit Button */
+.visit-btn {
+  padding: 8px 16px; /*Padding for button height width*/
+  background: #00b894;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Split Container */
+.container {
+  display: flex;
+  height: 100vh; /*Height of container*/
+}
+
+/* Left and Right Halves */
+.div1, .div2 {
+  flex: 1; /*Equal width for both halves*/
+  height: 100%; /*Height of both halves*/
+}
+
+/* Left Text Area */
+.div1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 40px; /*Padding for text area width*/
+}
+
+/* Text Content */
+.div1 .content {
+  max-width: 500px; /*Max width for text content*/
+  text-align: left; /*Align text to left*/
+}
+
+.div1 .content h1 {
+  font-size: 40px;
+  color: #2d3436;
+  margin-bottom: 20px; /*Margin bottom for heading*/
+  line-height: 1.4; /*Line height for heading*/
+}
+
+.green {
+  color: #00b894;
+}
+
+.div1 .content p {
+  font-size: 16px;
+  color: #636e72;
+  margin-bottom: 30px; /*Margin bottom for paragraph*/
+  line-height: 1.6; /*Line height for paragraph*/
+}
+
+/* Explore Button */
+.explore-btn {
+  display: inline-block;
+  background: #00b894;
+  color: white;
+  padding: 12px 25px; /*Padding for button*/
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500; /*Font weight for button*/
+}
+
+.explore-btn:hover {
+  background: #019970;
+}
+
+/* Right Image Section */
+.div2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Search Section */
+.search-section {
+  background: #00b894;
+  padding: 25px 40px; /*search section height width*/
+  display: flex;
+  gap: 30px; /*Gap between search input and button*/
+  justify-content: center;
+  margin-top: -90px; /* Pulls section upward */
+  z-index: 1; /*Z-index for search section*/
+  position: relative;
+}
+
+.search-section input,
+.search-section select {
+  padding: 12px;
+  border: none;
+  border-radius: 5px; /*Border radius for input and select*/
+  width: 350px; /*Width for input and select*/
+}
+
+/* Search Button */
+.search-btn {
+  background: #2d3436;
+  color: white;
+  padding: 12px 100px; /*search button height width*/
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
